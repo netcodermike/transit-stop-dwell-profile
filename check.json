@@ -1,0 +1,61 @@
+{
+  "command": [
+    "dotnet",
+    "bin/Debug/net8.0/App.dll"
+  ],
+  "expected": {
+    "event_count": 4,
+    "trips": [
+      {
+        "trip_id": "A10",
+        "initial_delay_seconds": 60,
+        "final_delay_seconds": 95,
+        "dwell_change_seconds": 35,
+        "between_stops_change_seconds": 0,
+        "stops": [
+          {
+            "stop_id": "Civic Center",
+            "stop_sequence": 8,
+            "arrival_delay_seconds": 60,
+            "departure_delay_seconds": 75,
+            "dwell_change_seconds": 15,
+            "incoming_run_change_seconds": null
+          },
+          {
+            "stop_id": "Library",
+            "stop_sequence": 9,
+            "arrival_delay_seconds": 65,
+            "departure_delay_seconds": 55,
+            "dwell_change_seconds": -10,
+            "incoming_run_change_seconds": -10
+          },
+          {
+            "stop_id": "Depot",
+            "stop_sequence": 11,
+            "arrival_delay_seconds": 65,
+            "departure_delay_seconds": 95,
+            "dwell_change_seconds": 30,
+            "incoming_run_change_seconds": 10
+          }
+        ]
+      },
+      {
+        "trip_id": "A20",
+        "initial_delay_seconds": 15,
+        "final_delay_seconds": 31,
+        "dwell_change_seconds": 16,
+        "between_stops_change_seconds": 0,
+        "stops": [
+          {
+            "stop_id": "Civic Center",
+            "stop_sequence": 8,
+            "arrival_delay_seconds": 15,
+            "departure_delay_seconds": 31,
+            "dwell_change_seconds": 16,
+            "incoming_run_change_seconds": null
+          }
+        ]
+      }
+    ]
+  }
+}
